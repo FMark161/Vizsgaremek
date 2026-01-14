@@ -1,5 +1,19 @@
 # Vizsgatervezet – Zeneiskolai Webalkalmazás
 
+## Tartalomjegyzék
+
+- [Projekt célja](#vizsgatervezet--zeneiskolai-webalkalmazás)
+- [1. Regisztráció és bejelentkezés modul](#1-regisztráció-és-bejelentkezés-modul)
+- [2. Diáknyilvántartó rendszer](#2-diáknyilvántartó-rendszer)
+- [3. Óravásárlás és kurzusválasztás](#3-óravásárlás-és-kurzusválasztás)
+- [4. Hangszer bérlése és vásárlása](#4-hangszer-bérlése-és-vásárlása)
+- [5. Eseménykezelő modul](#5-eseménykezelő-modul)
+- [6. Kapcsolat és információk](#6-kapcsolat-és-információk)
+- [7. Felhasználói felület és dizájn](#7-felhasználói-felület-és-dizájn)
+- [8. Tesztelési terv](#8-tesztelési-terv)
+- [9. Összegzés](#9-összegzés)
+
+
 Projekt célja: Egy modern, felhasználóbarát webes rendszer fejlesztése, amely egy zeneiskola működését támogatja online környezetben.
 A tervezett alkalmazás fő célja, hogy digitalizálja és megkönnyítse a zeneiskola mindennapi működését, valamint lehetőséget biztosítson a diákok, tanárok és érdeklődők számára az online ügyintézésre. A rendszer egy központi weboldalra épül, amely regisztrációval és belépéssel érhető el, és különböző modulokból áll, mint a diáknyilvántartás, óravásárlás, hangszerkezelés, eseménykezelés és kapcsolatfelvétel.
 ## 1. Regisztráció és bejelentkezés modul
