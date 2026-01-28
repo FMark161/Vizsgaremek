@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harmónia Zeneiskola - Kezdőlap</title>
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Ikonok betöltése -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts-ok betöltése -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <!-- Cím és logó -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <!-- Logó bal oldalon -->
+            <a class="navbar-brand me-4" href="home.html">
+                <img src="logo.png" alt="Harmónia Zeneiskola logó" class="logo-img">
+                <span class="brand-text">Harmónia<span>Zene</span></span>
+            </a>
+
+            <!-- Telefonos hamburger menü -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menü + gombok egy sorban -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Menü középen -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kurzusok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="teachers.html">Tanárok</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Hangszerek</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kölcsönzés</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Események</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Kapcsolat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Admin</a>
+                    </li>
+                </ul>
+
+                <!-- Gombok jobb oldalon -->
+                <div class="d-flex gap-2">
+                    <button class="btn btn-secondary-custom" id="loginBtn">Bejelentkezés</button>
+                    <button class="btn btn-primary" id="registerBtn">Regisztráció</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero section - köszöntő rész -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="hero-text mb-5 mb-lg-0">
+                        <h1 class="mb-4">Üdvözöl a <span>Harmónia Zeneiskola</span></h1>
+                        <p class="mb-4">Modern zeneiskola, ahol kreativitás, inspiráció és kiváló oktatás találkozik.
+                            Kezdőktől a haladóig, minden korosztálynak.</p>
+                        <div class="hero-buttons d-flex flex-column flex-sm-row gap-3">
+                            <button class="btn btn-primary" id="heroRegisterBtn">Jelentkezem most</button>
+                            <a href="" class="btn btn-outline-primary">Kapcsolatfelvétel</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="zeneiskolaBelso.jpg" alt="Zeneiskola tantermi kép"
+                            class="img-fluid">
+                        <div class="floating-elements">
+                            <div class="music-note note-1"><i class="fas fa-music"></i></div>
+                            <div class="music-note note-2"><i class="fas fa-guitar"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about py-5" id="about">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="mb-3">Bemutatkozás</h2>
+                <p class="mx-auto">Ismerj meg minket közelebbről, és fedezd fel, mi tesz minket egyedivé a zeneoktatás
+                    világában.</p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="about-text">
+                        <h3 class="mb-4">A zene varázslatos világába kalauzolunk</h3>
+                        <p class="mb-4">A Harmónia Zeneiskola 2010 óta működik, és mára az ország egyik legnépszerűbb és
+                            legmodernebb zenei oktatási intézménye lett. Célunk, hogy mindenki megtalálja a számára
+                            megfelelő zenei kifejezési formát, akár hobbiként, akár profi pályafutás céljával.</p>
+                        <p class="mb-5">Tantermekeink a legkorszerűbb eszközökkel vannak felszerelve, oktatóink pedig
+                            mind aktív zenészek, producerek, akik valódi színpad- és stúdiótapasztalattal rendelkeznek.
+                            Hiszünk abban, hogy a zene egyesíti az embereket és fejleszti a kreatív képességeket.</p>
+
+                        <div class="row about-features">
+                            <div class="col-md-6 about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Professzionális oktatás</h4>
+                                    <p class="mb-0">Minden oktatónk diplomás zenész, akik szeretettel és türelemmel
+                                        oktatják a diákokat.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-music"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Modern felszereltség</h4>
+                                    <p class="mb-0">Digitális stúdiók, legújabb hangszerek és felszerelések várnak
+                                        kreativitásodra.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Közösségi élmény</h4>
+                                    <p class="mb-0">Rendszeres koncertek, workshopok és közös zenei alkalmak várnak
+                                        diákjainkra.</p>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6 about-feature">
+                                <div class="feature-icon">
+                                    <i class="fas fa-calendar-alt"></i>
+                                </div>
+                                <div class="feature-text">
+                                    <h4>Rugalmas időpontok</h4>
+                                    <p class="mb-0">Naponta 8-22 óráig tartunk nyitva, hogy mindenki megtalálja a
+                                        számára megfelelő időpontot.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="about-stats mt-5 p-4 rounded">
+                            <div class="row text-center">
+                                <div class="col-6 col-md-3 stat-item">
+                                    <span class="stat-number">13+</span>
+                                    <span class="stat-label">Éves tapasztalat</span>
+                                </div>
+                                <div class="col-6 col-md-3 stat-item">
+                                    <span class="stat-number">24</span>
+                                    <span class="stat-label">Oktató</span>
+                                </div>
+                                <div class="col-6 col-md-3 stat-item">
+                                    <span class="stat-number">850+</span>
+                                    <span class="stat-label">Elégedett diák</span>
+                                </div>
+                                <div class="col-6 col-md-3 stat-item">
+                                    <span class="stat-number">15</span>
+                                    <span class="stat-label">Hangszer lehetőség</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <img src="zeneiskolaBelso2.jpg"
+                        alt="Zeneiskola belső tere" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events py-5" id="events">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="mb-3">Események</h2>
+                <p class="mx-auto">Fedezd fel legfrissebb eseményeinket, koncertjeinket és workshopjainkat.</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <h3 class="mb-4">Közelgő események</h3>
+
+                    <div class="row row-cols-1 gy-4">
+                        <div class="col">
+                            <div class="event-card">
+                                <div class="d-flex flex-column flex-md-row align-items-start gap-3 mb-3">
+                                    <div class="event-date">
+                                        <span class="event-day">25</span>
+                                        <span class="event-month">OKT</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="event-title">Nyílt nap és próbaórák</h4>
+                                        <p class="event-details mb-2">Ismerd meg iskolánkat, találkozz oktatóinkkal, és
+                                            próbálj ki hangszereket ingyenes próbaórákon.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pt-3 border-top">
+                                    <div class="event-location mb-2 mb-md-0">
+                                        <i class="fas fa-map-marker-alt me-2"></i>
+                                        <span>Fő épület, Nagytér</span>
+                                    </div>
+                                    <button class="btn btn-outline-primary event-button">Részletek</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="event-card">
+                                <div class="d-flex flex-column flex-md-row align-items-start gap-3 mb-3">
+                                    <div class="event-date">
+                                        <span class="event-day">05</span>
+                                        <span class="event-month">NOV</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="event-title">Diákok estje - Akusztikus koncert</h4>
+                                        <p class="event-details mb-2">Tehetséges diákjaink bemutatkoznak egy különleges
+                                            akusztikus koncerten. Szavazhatsz a közönségdíjra!</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pt-3 border-top">
+                                    <div class="event-location mb-2 mb-md-0">
+                                        <i class="fas fa-map-marker-alt me-2"></i>
+                                        <span>Kisterem, 1. emelet</span>
+                                    </div>
+                                    <button class="btn btn-outline-primary event-button">Részletek</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="event-card">
+                                <div class="d-flex flex-column flex-md-row align-items-start gap-3 mb-3">
+                                    <div class="event-date">
+                                        <span class="event-day">15</span>
+                                        <span class="event-month">NOV</span>
+                                    </div>
+                                    <div>
+                                        <h4 class="event-title">Zenei Produkciós Workshop</h4>
+                                        <p class="event-details mb-2">Tanuld meg a digitális zeneszerkesztés alapjait
+                                            professzionális producerektől. Kezdőknek és haladóknak.</p>
+                                    </div>
+                                </div>
+                                <div
+                                    class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center pt-3 border-top">
+                                    <div class="event-location mb-2 mb-md-0">
+                                        <i class="fas fa-map-marker-alt me-2"></i>
+                                        <span>Stúdió A, 2. emelet</span>
+                                    </div>
+                                    <button class="btn btn-outline-primary event-button">Részletek</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5">
+                    <div class="info-box">
+                        <h3 class="mb-4">Miért érdemes részt venni eseményeinken?</h3>
+                        <p class="mb-4">Eseményeink nem csupán szórakozás, hanem lehetőséget kínálnak a fejlődésre, új
+                            kapcsolatok építésére és a zenei közösség részévé válásra.</p>
+
+                        <div class="info-features">
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-accent">
+                                    <i class="fas fa-handshake fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Közösségépítés</h4>
+                                    <p class="mb-0">Találkozz más zenész lelkesekkel, építs kapcsolatokat és alkoss
+                                        együtt.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-accent">
+                                    <i class="fas fa-chart-line fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Fejlődési lehetőség</h4>
+                                    <p class="mb-0">Workshopjainkon új technikákat sajátíthatsz el, koncertjeinken pedig
+                                        színpadi gyakorlatot szerezhetsz.</p>
+                                </div>
+                            </div>
+
+                            <div class="d-flex mb-4">
+                                <div class="me-3 text-accent">
+                                    <i class="fas fa-gift fa-2x"></i>
+                                </div>
+                                <div>
+                                    <h4>Ajándékok és meglepetések</h4>
+                                    <p class="mb-0">Rendszeresen készítünk ajándékokat, kedvezményeket és meglepetéseket
+                                        a résztvevők számára.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hours-box">
+                            <h4 class="mb-4">Események időpontjai</h4>
+                            <div class="hours-list">
+                                <div class="hour-item">
+                                    <span class="hour-day">Hétfő - Péntek</span>
+                                    <span class="hour-time">16:00 - 20:00</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="hour-day">Szombat</span>
+                                    <span class="hour-time">10:00 - 18:00</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="hour-day">Vasárnap</span>
+                                    <span class="hour-time">Zárt (kivéve különleges események)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact py-5" id="contact">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <h2 class="mb-3">Kapcsolat</h2>
+                <p class="mx-auto">Lépj velünk kapcsolatba bármilyen kérdéssel, jelentkezéssel vagy információkért.</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-lg-6">
+                    <div class="contact-info">
+                        <h3 class="mb-4">Keress minket bátran!</h3>
+                        <p class="mb-5">Ha bármilyen kérdésed van az iskolánkkal, kurzusainkkal vagy eseményeinkkel
+                            kapcsolatban, állunk rendelkezésedre. Célunk, hogy minél hamarabb válaszoljunk minden
+                            megkeresésre.</p>
+
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Címünk</h4>
+                                    <p>1061, Budapest Jókai tér 1.<br>II. emelet, ajtó 12.</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Telefonszám</h4>
+                                    <p>+36 1 234 5678<br>+36 30 123 4567 (mobil)</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h4>Email cím</h4>
+                                    <p>info@harmoniazene.hu<br>jelentkezes@harmoniazene.hu</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hours-box">
+                            <h4 class="mb-4">Nyitvatartás</h4>
+                            <div class="hours-list">
+                                <div class="hour-item">
+                                    <span class="hour-day">Hétfő - Péntek</span>
+                                    <span class="hour-time">8:00 - 22:00</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="hour-day">Szombat</span>
+                                    <span class="hour-time">9:00 - 18:00</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="hour-day">Vasárnap</span>
+                                    <span class="hour-time">9:00 - 16:00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Google Maps -->
+                        <div class="map-container mt-5">
+                            <div class="map-embed">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.546959963268!2d19.05062427685681!3d47.49935827118095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3d8e0d4f5b%3A0x5c3168c4e1c7c2d9!2sBudapest%2C%20J%C3%B3kai%20t%C3%A9r%201%2C%201061!5e0!3m2!1shu!2shu!4v1700000000000!5m2!1shu!2shu"
+                                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                    title="Harmónia Zeneiskola helyszíne - 1061 Budapest, Jókai tér 1">
+                                </iframe>
+                                <div class="map-overlay">
+                                    <div class="map-info">
+                                        <h4><i class="fas fa-map-marker-alt"></i> Helyszínünk</h4>
+                                        <p><strong>1061 Budapest, Jókai tér 1.</strong></p>
+                                        <p class="map-note"><i class="fas fa-info-circle"></i> Kattints a térképre
+                                            részletes utasításokért!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="contact-form-box">
+                        <h3 class="mb-4">Küldj üzenetet</h3>
+                        <form id="contactForm">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Teljes név *</label>
+                                <input type="text" class="form-control" id="name" name="name" required
+                                    placeholder="Kovács János">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email cím *</label>
+                                <input type="email" class="form-control" id="email" name="email" required
+                                    placeholder="pelda@email.hu">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Telefonszám</label>
+                                <input type="tel" class="form-control" id="phone" name="phone"
+                                    placeholder="+36 20 123 4567">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Ügy típusa *</label>
+                                <select class="form-select" id="subject" name="subject" required>
+                                    <option value="" disabled selected>Válassz egy opciót</option>
+                                    <option value="jelentkezes">Jelentkezés kurzusra</option>
+                                    <option value="informacio">További információk</option>
+                                    <option value="esemeny">Eseményekről információk</option>
+                                    <option value="egyeb">Egyéb ügy</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="message" class="form-label">Üzenet *</label>
+                                <textarea class="form-control" id="message" name="message" rows="6" required
+                                    placeholder="Írd ide üzeneted részleteit..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100 py-3">Üzenet küldése</button>
+                        </form>
+
+                        <div class="mt-4 p-3 rounded" style="background-color: rgba(29, 211, 198, 0.05);">
+                            <h4 class="h5 mb-2">
+                                <i class="fas fa-info-circle me-2"></i> Gyakran feltett kérdések
+                            </h4>
+                            <p class="mb-0 small">
+                                Általában 24 órán belül válaszolunk minden megkeresésre. Sürgős esetben hívj minket a
+                                +36 30 123 4567-es számon!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-5">
+        <div class="container">
+            <div class="row g-5 mb-5">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <div class="footer-logo mb-4">
+                            <img src="logo_feherHatter.png" alt="Harmónia Zeneiskola logó" class="footer-logo-img">
+                            Harmónia<span>Zene</span>
+                        </div>
+                        <p class="mb-4">Modern zeneiskola, ahol a kreativitás és a szakma találkozik. Célunk, hogy
+                            mindenki megtalálja a zenei önkifejezés módját.</p>
+                        <div class="social-icons d-flex gap-3">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h3 class="mb-4">Oldalak</h3>
+                        <ul>
+                            <li><a href="home.html">Kezdőlap</a></li>
+                            <li><a href="#about">Kurzusok</a></li>
+                            <li><a href="teachers.html">Tanárok</a></li>
+                            <li><a href="#contact">Hangszerek</a></li>
+                            <li><a href="#contact">Kölcsönzés</a></li>
+                            <li><a href="#events">Események</a></li>
+                            <li><a href="#contact">Kapcsolat</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 col-md-4">
+                    <div class="footer-links">
+                        <h3 class="mb-4">Hasznos Linkek</h3>
+                        <ul>
+                            <li><a href="#" onclick="return false;">Bejelentkezés</a></li>
+                            <li><a href="#" onclick="return false;">Regisztráció</a></li>
+                            <li><a href="#">Általános Szerződési Feltételek</a></li>
+                            <li><a href="#">Adatvédelmi Tájékoztató</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer-links">
+                        <h3 class="mb-4">Gyors elérhetőség</h3>
+                        <ul class="contact-info list-unstyled">
+                            <li class="mb-3 d-flex align-items-start">
+                                <i class="fas fa-map-marker-alt me-3 mt-1" style="color: var(--accent-turquoise);"></i>
+                                <span>1061, Budapest Jókai tér 1.</span>
+                            </li>
+                            <li class="d-flex align-items-start">
+                                <i class="fas fa-phone me-3 mt-1" style="color: var(--accent-turquoise);"></i>
+                                <span>+36 1 234 5678</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copyright pt-4">
+                <p class="text-center mb-0">&copy; 2023 Harmónia Zeneiskola. Minden jog fenntartva. |
+                    <a href="#" style="color: #1DD3C6;">Adatvédelmi irányelvek</a> |
+                    <a href="#" style="color: #1DD3C6;">Impresszum</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    // Close mobile navbar if open
+                    const navbarCollapse = document.getElementById('navbarNav');
+                    if (navbarCollapse.classList.contains('show')) {
+                        new bootstrap.Collapse(navbarCollapse).toggle();
+                    }
+
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Button event handlers
+        document.getElementById('loginBtn').addEventListener('click', function () {
+            alert("A bejelentkezési oldal jelenleg fejlesztés alatt áll. Kérjük, próbáld újra később, vagy használd a kapcsolati űrlapot!");
+        });
+
+        document.getElementById('registerBtn').addEventListener('click', function () {
+            alert("A regisztrációs oldal jelenleg fejlesztés alatt áll. Kérjük, próbáld újra később, vagy használd a kapcsolati űrlapot!");
+        });
+
+        document.getElementById('heroRegisterBtn').addEventListener('click', function () {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('subject').value = 'jelentkezes';
+            document.getElementById('name').focus();
+        });
+
+        // Event button handlers
+        document.querySelectorAll('.event-button').forEach(button => {
+            button.addEventListener('click', function () {
+                alert("Az események részletes oldala hamarosan elérhető lesz! Addig is kérjük, használd a kapcsolati űrlapot további információkért.");
+            });
+        });
+
+        // Contact form handler
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !subject || !message) {
+                alert("Kérjük, töltsd ki az összes kötelező mezőt!");
+                return;
+            }
+
+            alert(`Köszönjük üzeneted, ${name}! Hamarosan felvesszük veled a kapcsolatot a megadott email címen (${email}).`);
+
+            this.reset();
+            document.getElementById('subject').value = '';
+        });
+
+        // Form autofill for development
+        if (window.location.href.includes('localhost') || window.location.href.includes('127.0.0.1')) {
+            setTimeout(() => {
+                document.getElementById('name').value = 'Teszt Felhasználó';
+                document.getElementById('email').value = 'teszt@example.com';
+                document.getElementById('subject').value = 'informacio';
+                document.getElementById('message').value = 'Ez egy teszt üzenet a kapcsolati űrlap teszteléséhez.';
+            }, 1000);
+        }
+    </script>
+</body>
+
+</html>
